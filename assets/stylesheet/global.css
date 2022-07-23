@@ -1,0 +1,92 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > #stopwatch {
+  width: 350px;
+  height: 350px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background: #f1f1f1;
+}
+body > #stopwatch > div::before {
+  content: "Stopwatch";
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #4646e9;
+}
+body > #stopwatch > div > #digits {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+body > #stopwatch > div > #digits > div {
+  display: inline-block;
+  margin: 0 10px;
+}
+body > #stopwatch > div > #buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+body > #stopwatch > div > #buttons > button {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #f07818;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+body > #stopwatch > div > #buttons > button:nth-of-type(4) {
+  font-size: 1.8rem;
+}
+body > #stopwatch > div > #buttons > button:hover {
+  border: 1px solid #4646e9;
+}
+body > #stopwatch > div > h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4646e9;
+  font-weight: normal;
+}
+body > #stopwatch > div > h1 > a {
+  text-decoration: underline;
+}
+body > #lapList {
+  margin-left: 50px;
+  padding: 15px;
+  width: 350px;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #000;
+}
+body > #lapList > li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 2px;
+  margin: 2px;
+}/*# sourceMappingURL=global.css.map */

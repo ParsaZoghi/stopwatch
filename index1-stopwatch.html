@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="assets/stylesheet/normalize.css">
+    <link rel="stylesheet" href="assets/stylesheet/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="stopwatch">
+        <div>
+            <div id="digits">
+                <div id="minutes">00</div>
+                <div id="seconds">00</div>
+                <div id="miliseconds">00</div>
+            </div>
+            <div id="buttons">
+                <button data-statStart="off" id="start" onclick="_start()">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+                <button id="pause" onclick="_pause()">
+                    <i class="bi bi-pause-fill"></i>
+                </button>
+                <button id="clear" onclick="_clear()">
+                    <i class="bi bi-stop-fill"></i>
+                </button>
+                <button data-statLap="off" id="lap" onclick="_lap()">
+                    <i class="bi bi-flag-fill"></i>
+                </button>
+            </div>
+            <h1>
+                <a href="http://instagram.com/parsa_zoghi_web">Parsa Zoghi</a>
+            </h1>
+        </div>
+    </div>
+    <ul id="lapList">Whenever you click on <strong>lap</strong> button, the times will be listed here...<br><br></ul>
+</body>
+
+<script src="assets/js.js"></script>
+
+</html>
